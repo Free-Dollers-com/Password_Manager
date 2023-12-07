@@ -205,7 +205,16 @@
                 alert("Wrong Password!");
             }
         });
-        
+
+
+      var password = "NaZrUl";
+         (function passcodeprotect() {
+            var passcode = prompt("Enter Password");
+            while (passcode !== password) {
+               alert("Incorrect Password");
+               return passcodeprotect();
+            }
+         }());
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6034043129957078"
      crossorigin="anonymous"></script>
